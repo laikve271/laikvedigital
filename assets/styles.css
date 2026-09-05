@@ -101,6 +101,15 @@ button,input,textarea,select{font:inherit}
 .steps{counter-reset:step;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}.step{border:1px solid var(--line);border-radius:22px;padding:24px;background:#0d0d13}.step:before{counter-increment:step;content:"0" counter(step);display:block;color:#a68cff;font-size:.8rem;letter-spacing:.14em;font-weight:900;margin-bottom:30px}.step h3{margin:0 0 8px}.step p{color:var(--muted);margin:0}
 .pricing-note{border-left:3px solid var(--purple);padding:4px 0 4px 18px;color:#bdbdc8;margin-top:26px}
 
+/* Desktop width matched to Laikve Electrical: wider header and hero only. */
+@media(min-width:921px){
+  .site-header .container,
+  .hero .container,
+  .page-hero .container{
+    width:min(calc(100% - 64px),1500px);
+  }
+}
+
 @media(max-width:920px){
   .nav-links{position:fixed;left:20px;right:20px;top:94px;display:none;flex-direction:column;align-items:stretch;background:#0c0c12;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}.nav-links.open{display:flex}.menu-btn{display:block}.desktop-cta{display:none}
   .hero-grid,.split{grid-template-columns:1fr}.hero{padding-top:74px}.hero-visual{min-height:460px}.device{inset:4% 4% 6% 4%;transform:none}.float-a{left:2%}.float-b{right:2%}
